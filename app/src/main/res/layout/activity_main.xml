@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/icon"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FD9437"
+        android:text="INGRESA"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnIngresar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FD9437"
+        android:text="CREA TU CUENTA"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCrear"
+        android:layout_centerHorizontal="true"
+        android:text="Tal vez despues>"
+        android:textColor="#FD9437"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+
+</RelativeLayout>

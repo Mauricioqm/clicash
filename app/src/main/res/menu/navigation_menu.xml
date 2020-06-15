@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_inicio_blanco"
+        />
+
+    <item
+        android:id="@+id/cuponesFragment"
+        android:title="Cupones"
+        android:icon="@drawable/ic_cupones"
+        />
+    <item
+        android:id="@+id/cashFragment"
+        android:title="Cash"
+        android:icon="@drawable/ic_cash"
+        />
+    <item
+        android:id="@+id/sucursalesFragment"
+        android:title="Sucursales"
+        android:icon="@drawable/ic_sucursales"
+        />
+
+
+
+</menu>

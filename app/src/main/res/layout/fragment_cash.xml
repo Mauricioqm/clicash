@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+
+        </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragments.CashFragment">
+
+
+                <TableLayout
+                    android:id="@+id/frag_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                        <TableRow
+                            android:id="@+id/cashDisponible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Textodisponoble"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_span="2"
+                                    android:gravity="right"
+                                    android:text="Cash disponible"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#A9AAAD"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/totalcash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="$100"
+                                    android:textColor="#A9AAAD"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FD9437"
+                            android:text="REDIMIR>"
+                            android:textColor="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/Cabecera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/ColumnaAnio"
+                                    android:layout_width="163dp"
+                                    android:layout_height="match_parent"
+                                    android:padding="5px"
+                                    android:text="Sucursal"
+                                    android:textColor="#FD9437"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/ColumnaCiudad"
+                                    android:layout_width="105dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="5px"
+                                    android:text="Fecha"
+                                    android:textColor="#FD9437"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/ColumnaOro"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:padding="5px"
+                                    android:text="Acomulado"
+                                    android:textColor="#FD9437"
+                                    android:textSize="16dp" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/Fila1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/SeparadorTotales"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:id="@+id/LineaTotales"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="2px"
+                                    android:layout_span="5"
+                                    android:background="#FD9437"></FrameLayout>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/Cabecera2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/cancelaciones"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5px"
+                                    android:text="Cancelaciones"
+                                    android:textColor="#FD9437"
+                                    android:textSize="16dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Fila8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/Anio8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Cuidad8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/Oro8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/Totales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#A9AAAD"
+                            android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/TextoTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_span="2"
+                                    android:gravity="right"
+                                    android:text="Cash redimido"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#ffffff"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/OroTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="$400"
+                                    android:textColor="#ffffff"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                        </TableRow>
+                </TableLayout>
+
+
+        </RelativeLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".correoEnviado">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/icon"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/perfecto"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="51dp"
+        android:background="#000000"
+        android:padding="25dp"
+        android:text="Perfecto, se te ha enviado un correo electrónico para verificar tu cuenta"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnIngresa"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perfecto"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#FD9437"
+        android:text="INGRESA>"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

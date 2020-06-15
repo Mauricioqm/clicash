@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drawerLayout"
+        android:icon="@drawable/home"
+        android:title="Programa de lealtad" />
+    <item
+        android:id="@+id/como_funciona"
+        android:icon="@drawable/cupones"
+        android:title="¿Como funciona?" />
+    <item
+        android:id="@+id/mis_tarjetas"
+        android:icon="@drawable/cash"
+        android:title="Mis tarjetas" />
+    <item
+        android:id="@+id/mi_cuenta"
+        android:icon="@drawable/point"
+        android:title="Mi cuenta" />
+</menu>

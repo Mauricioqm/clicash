@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.adjb.clicash.fragments.HomeFragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/cuponesFragment"
+        android:name="com.adjb.clicash.fragments.CuponesFragment"
+        android:label="Cupones" />
+    <fragment
+        android:id="@+id/sucursalesFragment"
+        android:name="com.adjb.clicash.fragments.SucursalesFragment"
+        android:label="Sucursales" />
+    <fragment
+        android:id="@+id/cashFragment"
+        android:name="com.adjb.clicash.fragments.CashFragment"
+        android:label="Cash" />
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.adjb.clicash.fragments.mapaFragment"
+        android:label="fragment_mapa"
+        tools:layout="@layout/fragment_mapa" />
+</navigation>

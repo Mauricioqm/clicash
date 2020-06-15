@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datos">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:srcCompat="@mipmap/logotop"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Registro"
+        android:textSize="36sp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        android:layout_below="@id/registro"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/celular"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Celular (10 dígitos)"
+        android:layout_below="@id/nombre"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/cp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:layout_below="@id/celular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="C.P."/>
+
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@id/cp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="Fecha de nacimiento"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fecha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Estos datos solo se utilizarán con el fin de enviarte confirmaciones de tus reembolsos y ofertas"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnContinuarDatos"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="#A9AAAD"
+        android:text="Continuar>"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

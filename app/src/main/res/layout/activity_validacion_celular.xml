@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".validacionCelular">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/logotop" />
+
+    <TextView
+        android:id="@+id/validacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validación número de celular"
+        android:textSize="18sp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/celular"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@id/validacion"
+        android:layout_centerHorizontal="true"
+        android:hint="55 6666 7777"/>
+
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/celular"
+        android:layout_alignLeft="@id/celular"
+        android:backgroundTint="#FD9437"
+        android:text="Enviar código"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEnviar"
+        android:layout_centerHorizontal="true"
+        android:padding="60dp"
+        android:text="Ingresa código de 4 dígitos que fue enviado a tu correo celular"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/texto"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnValidarCelular"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#A9AAAD"
+        android:text="Validar>"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

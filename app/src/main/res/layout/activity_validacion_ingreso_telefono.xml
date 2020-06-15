@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".validacionIngresoTelefono">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/logotop" />
+
+    <TextView
+        android:id="@+id/validacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Validación"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/validacion"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_local_telefono"
+        android:text="Ingresa código de 4 dígitos que fue\n enviado a tu nuevo celular"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/codigoTelefonoRecibido"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        android:layout_below="@id/texto"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnValidarTelefonoNuevo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigoTelefonoRecibido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="#FD9437"
+        android:text="Validar>"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

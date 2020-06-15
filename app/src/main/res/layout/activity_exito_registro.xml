@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exitoRegistro">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/logotop" />
+
+    <TextView
+        android:id="@+id/aviso"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="#000000"
+        android:text="Listo,\n tu cuenta fue creada\n exitosamente"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aviso"
+        android:layout_marginTop="59dp"
+        android:text="A partir de ahora podrás ser parte de nuestro\n Programa de Lealtad"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#8A8C8E" />
+
+    <TextView
+        android:id="@+id/noticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginTop="78dp"
+        android:text="Es importante que agregues tus Tarjetas y\n verifiques tu correo electrónico y celular\n para aplicar tus reembolsos."
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FD9437" />
+
+    <Button
+        android:id="@+id/btnAgregarTarjetas"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticia"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FD9437"
+        android:text="agrega tus tarjetas"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/irHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tal vez despúes"
+        android:textColor="#FD9437"
+        android:layout_below="@id/btnAgregarTarjetas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_sucursales" type="id" />
+    <item name="ic_home" type="id" />
+    <item name="ic_cupones" type="id" />
+    <item name="ic_cash" type="id" />
+</resources>

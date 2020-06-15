@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/home3">
+
+    <activity
+        android:id="@+id/cuenta"
+        android:name="com.adjb.clicash.cuenta"
+        android:label="activity_cuenta"
+        tools:layout="@layout/activity_cuenta" />
+    <activity
+        android:id="@+id/comoFunciona"
+        android:name="com.adjb.clicash.comoFunciona"
+        android:label="activity_como_funciona"
+        tools:layout="@layout/activity_como_funciona" />
+    <activity
+        android:id="@+id/misTarjetas"
+        android:name="com.adjb.clicash.misTarjetas"
+        android:label="activity_mis_tarjetas"
+        tools:layout="@layout/activity_mis_tarjetas" />
+    <activity
+        android:id="@+id/home3"
+        android:name="com.adjb.clicash.home"
+        android:label="home" />
+</navigation>

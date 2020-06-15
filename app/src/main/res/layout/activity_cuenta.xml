@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".cuenta">
+
+    <ImageView
+        android:id="@+id/micuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/logotop" />
+
+    <TextView
+        android:id="@+id/datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/micuenta"
+        android:layout_centerHorizontal="true"
+        android:text="Datos generales"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/correoUsuario"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datos"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/ic_next"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:text="jorge.sanchez30@live.com"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/passwordUsuario"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correoUsuario"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/ic_next"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="********"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/celularCuentaUsuario"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordUsuario"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/ic_next"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="55 6666 7777"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/codigopostalUsuario"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/celularCuentaUsuario"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/ic_next"
+        android:ems="10"
+        android:inputType="number"
+        android:text="55120"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/fechanacimientoUsuario"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigopostalUsuario"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/ic_next"
+        android:ems="10"
+        android:inputType="date"
+        android:text="04|Dic|1987"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/mistarjetascuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fechanacimientoUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="167dp"
+        android:text="Mis tarjetas>"
+        android:textColor="#FD9437"
+        android:textSize="24sp" />
+
+</RelativeLayout>

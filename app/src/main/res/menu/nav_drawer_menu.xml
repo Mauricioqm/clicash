@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/drawerLayout"
+        android:icon="@drawable/ic_programa_de_lealtad_blanco"
+        android:title="Programa de lealtad"/>
+    <item
+        android:id="@+id/comofunciona"
+        android:icon="@drawable/ic_como_funciona_blanco"
+        android:title="¿Como funciona?" />
+    <item
+        android:id="@+id/mistarjetas"
+        android:icon="@drawable/ic_mis_tarjetas_blanco"
+        android:title="Mis tarjetas" />
+    <item
+        android:id="@+id/micuenta"
+        android:icon="@drawable/ic_mi_cuenta_bllanco"
+        android:title="Mi cuenta" />
+
+
+</menu>

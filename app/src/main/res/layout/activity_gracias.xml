@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gracias">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/logotop" />
+
+    <ImageView
+        android:id="@+id/stars"
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/texto"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnContinuarGracias"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stars"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:text="Continuar"
+        android:textColor="#fff"
+        android:backgroundTint="#FD9437"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>
