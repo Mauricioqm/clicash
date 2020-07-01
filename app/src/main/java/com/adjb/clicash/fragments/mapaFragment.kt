@@ -21,10 +21,10 @@ class mapaFragment : Fragment(), OnMapReadyCallback {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        map_view.onCreate(savedInstanceState)
+        /*map_view.onCreate(savedInstanceState)
         map_view.onResume()
 
-        map_view.getMapAsync(this)
+        map_view.getMapAsync(this)*/
     }
 
     override fun onMapReady(map: GoogleMap?) {
@@ -41,6 +41,8 @@ class mapaFragment : Fragment(), OnMapReadyCallback {
         return inflater.inflate(R.layout.fragment_mapa, container, false)
     }
 
-
+    companion object {
+        fun newInstance() = SucursalesFragment()
+    }
 
 }

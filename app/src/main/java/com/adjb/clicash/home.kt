@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.Placeholder
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -28,19 +29,52 @@ class home : AppCompatActivity() {
 
     lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var navController: NavController
+    lateinit var toggle: ActionBarDrawerToggle
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        navView.setNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.comofunciona -> {
+                    startActivity(Intent(this, comoFunciona::class.java))
+
+                }
+
+                R.id.drawerLayout -> {
+                    startActivity(Intent(this, home::class.java))
+
+                }
+
+                R.id.micuenta -> {
+                    startActivity(Intent(this, cuenta::class.java))
+
+                }
+
+                R.id.mistarjetas -> {
+                    startActivity(Intent(this, misTarjetas::class.java))
+
+                }
+            }
+            true
+        }
+
 
 
         // Bottom
         navController = findNavController(R.id.hostFragment)
         bottom_navigation.setupWithNavController(navController)
+
+
 
 
     }
@@ -52,28 +86,38 @@ class home : AppCompatActivity() {
     }
 
 
+    /*override fun onOptionsItemSelected(item: MenuItem): Boolean {
+            when (item.itemId) {
+                R.id.comofunciona -> {
+                    startActivity(Intent(this, comoFunciona::class.java))
+                    return true
+                }
+
+                R.id.drawerLayout -> {
+                    startActivity(Intent(this, home::class.java))
+                    return true
+                }
+
+                R.id.micuenta -> {
+                    startActivity(Intent(this, cuenta::class.java))
+                    return true
+                }
+
+                R.id.mistarjetas -> {
+                    startActivity(Intent(this, misTarjetas::class.java))
+                    return true
+                }
+            }
+
+            return super.onOptionsItemSelected(item)
+
+
+    }]*/
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
-            R.id.comofunciona -> {
-                startActivity(Intent(this, comoFunciona::class.java))
-                return true
-            }
-
-            R.id.drawerLayout -> {
-                startActivity(Intent(this, home::class.java))
-                return true
-            }
-
-            R.id.micuenta -> {
-                startActivity(Intent(this, cuenta::class.java))
-                return true
-            }
-
-            R.id.mistarjetas -> {
-                startActivity(Intent(this, misTarjetas::class.java))
-                return true
-            }
-       }
+        if(toggle.onOptionsItemSelected(item)) {
+            return true
+        }
         return super.onOptionsItemSelected(item)
     }
 
@@ -82,8 +126,6 @@ class home : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
        return NavigationUI.navigateUp(navController, appBarConfiguration)
     }
-
-
 
 
 }

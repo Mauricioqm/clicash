@@ -15,18 +15,19 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <TextView
-        android:id="@+id/frag_home"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:text="Home"
-        android:textSize="60dp" />
 
-        <com.synnapps.carouselview.CarouselView
-            android:layout_width="match_parent"
+            <TextView
+            android:id="@+id/frag_home"
+            android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:id="@+id/carousel_view_dos"
-            android:layout_below="@id/frag_home"/>
+            android:text="Home"
+            android:textSize="60dp" />
+
+            <com.synnapps.carouselview.CarouselView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/carousel_view_dos"
+                android:layout_below="@id/frag_home"/>
 
         </RelativeLayout>
 

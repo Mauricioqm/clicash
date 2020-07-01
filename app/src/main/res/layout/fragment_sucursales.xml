@@ -11,243 +11,324 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@mipmap/ubicacioncaesars"
-            android:padding="5dp"
+            android:padding="10dp"
             tools:context=".fragments.SucursalesFragment">
-
 
                 <TextView
                     android:id="@+id/frag_sucursales"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
                     android:text="Sucursales" />
-
-
-                <Button
-                    android:id="@+id/btnVermapa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="montevideo"
-                    android:layout_below="@id/frag_sucursales"/>
-
-                <RelativeLayout
-                    android:id="@+id/montevideo"
+                <!--<Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:text="ver mapa"
+                    android:id="@+id/btnMapa"/> -->
 
-                        <TextView
-                            android:id="@+id/ubicacion"
+                <!-- <LinearLayout
+                    android:id="@+id/ciudad1"
+                    android:layout_width="398dp"
+                    android:layout_height="81dp"
+                    android:layout_below="@id/frag_sucursales"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                        <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Montevideo"
-                            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/ubicacion"
-                            android:text="Av. Montevideo S/N" />
-
-                        <LinearLayout
-                            android:layout_width="94dp"
-                            android:layout_height="48dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="192dp"
-                            android:layout_toRightOf="@id/ubicacion"
-                            android:orientation="vertical">
+                            android:layout_height="match_parent">
 
                                 <TextView
+                                    android:id="@+id/montevideo"
+                                    android:layout_width="290dp"
+                                    android:layout_height="40dp"
+                                    android:text="Montevideo"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="290dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/montevideo"
+                                    android:text="Av. Montevideo S/N"
+                                    android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/montevideo">
+
+                                <TextView
+                                    android:id="@+id/distancia"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="42dp"
                                     android:text="1.5"
                                     android:textAlignment="center"
-                                    android:textSize="22dp" />
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="39dp"
+                                    android:layout_below="@id/distancia"
                                     android:text="mts"
                                     android:textAlignment="center"
-                                    android:textSize="12dp" />
-                        </LinearLayout>
-                </RelativeLayout>
+                                    android:textSize="14dp" />
 
+                        </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/laVilla"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/montevideo">
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/ubicacion2"
+                <LinearLayout
+                    android:id="@+id/ciudad2"
+                    android:layout_width="398dp"
+                    android:layout_height="81dp"
+                    android:layout_below="@id/ciudad1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                        <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="La Villa"
-                            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/ubicacion2"
-                            android:text="Calzada de los misterios" />
-
-                        <LinearLayout
-                            android:layout_width="94dp"
-                            android:layout_height="48dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="240dp"
-                            android:layout_toRightOf="@id/ubicacion2"
-                            android:orientation="vertical">
+                            android:layout_height="match_parent">
 
                                 <TextView
+                                    android:id="@+id/laVilla"
+                                    android:layout_width="290dp"
+                                    android:layout_height="40dp"
+                                    android:text="La Villa"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="290dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/laVilla"
+                                    android:text="Calzada de los misterios 146"
+                                    android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/laVilla">
+
+                                <TextView
+                                    android:id="@+id/distancia2"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="42dp"
                                     android:text="1.7"
                                     android:textAlignment="center"
-                                    android:textSize="22dp" />
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="39dp"
+                                    android:layout_below="@id/distancia2"
                                     android:text="mts"
                                     android:textAlignment="center"
-                                    android:textSize="12dp" />
-                        </LinearLayout>
-                </RelativeLayout>
+                                    android:textSize="14dp" />
 
+                        </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/loreto"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/laVilla">
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/ubicacion3"
+                <LinearLayout
+                    android:id="@+id/ciudad3"
+                    android:layout_width="398dp"
+                    android:layout_height="81dp"
+                    android:layout_below="@id/ciudad2"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                        <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Loreto Fabela"
-                            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/ubicacion3"
-                            android:text="Av. Loreto FabelaEsq. Eje 4 S/N" />
-
-                        <LinearLayout
-                            android:layout_width="94dp"
-                            android:layout_height="48dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="175dp"
-                            android:layout_toRightOf="@id/ubicacion3"
-                            android:orientation="vertical">
+                            android:layout_height="match_parent">
 
                                 <TextView
+                                    android:id="@+id/loreto"
+                                    android:layout_width="290dp"
+                                    android:layout_height="40dp"
+                                    android:text="Loreto Fabela"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="290dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/loreto"
+                                    android:text="Av. Loreto Fabela Esq. Eje 4 S/N"
+                                    android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/loreto">
+
+                                <TextView
+                                    android:id="@+id/distancia3"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="42dp"
                                     android:text="2.2"
                                     android:textAlignment="center"
-                                    android:textSize="22dp" />
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="39dp"
+                                    android:layout_below="@id/distancia3"
                                     android:text="mts"
                                     android:textAlignment="center"
-                                    android:textSize="12dp" />
-                        </LinearLayout>
-                </RelativeLayout>
+                                    android:textSize="14dp" />
 
+                        </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/sanFelipe"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/loreto">
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/ubicacion4"
+                <LinearLayout
+                    android:id="@+id/ciudad4"
+                    android:layout_width="398dp"
+                    android:layout_height="81dp"
+                    android:layout_below="@id/ciudad3"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                        <RelativeLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="San Felipe"
-                            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/ubicacion4"
-                            android:text="Calle Talpa 3028 Esq. Av. Dolores Hidalgo" />
-
-                        <LinearLayout
-                            android:layout_width="94dp"
-                            android:layout_height="48dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="210dp"
-                            android:layout_toRightOf="@id/ubicacion4"
-                            android:orientation="vertical">
+                            android:layout_height="match_parent">
 
                                 <TextView
+                                    android:id="@+id/felipe"
+                                    android:layout_width="290dp"
+                                    android:layout_height="40dp"
+                                    android:text="San Felipe"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="290dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/felipe"
+                                    android:text="Calle Talpa 3028 Esq. Av. Dolores Hidalgo"
+                                    android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/loreto">
+
+                                <TextView
+                                    android:id="@+id/distancia4"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="42dp"
                                     android:text="3.5"
                                     android:textAlignment="center"
-                                    android:textSize="22dp" />
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="39dp"
+                                    android:layout_below="@id/distancia4"
                                     android:text="mts"
                                     android:textAlignment="center"
-                                    android:textSize="12dp" />
-                        </LinearLayout>
-                </RelativeLayout>
+                                    android:textSize="14dp" />
 
+                        </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/noe"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ciudad5"
+                    android:layout_width="398dp"
+                    android:layout_height="81dp"
+                    android:layout_below="@id/ciudad4"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/noe"
+                                    android:layout_width="290dp"
+                                    android:layout_height="40dp"
+                                    android:text="Noe"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="290dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/noe"
+                                    android:text="Eje 3 Noe Esq. Delta"
+                                    android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/loreto">
+
+                                <TextView
+                                    android:id="@+id/distancia5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:text="6.2"
+                                    android:textAlignment="center"
+                                    android:textSize="22dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="39dp"
+                                    android:layout_below="@id/distancia5"
+                                    android:text="mts"
+                                    android:textAlignment="center"
+                                    android:textSize="16dp" />
+
+                        </RelativeLayout>
+
+                </LinearLayout> -->
+                <!-- <fragment
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:id="@+id/mapFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/sanFelipe">
-
-                        <TextView
-                            android:id="@+id/ubicacion5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Neo"
-                            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/ubicacion5"
-                            android:text="Eje 3 Noe Esq. Della" />
-
-                        <LinearLayout
-                            android:layout_width="94dp"
-                            android:layout_height="48dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="270dp"
-                            android:layout_toRightOf="@id/ubicacion5"
-                            android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="1.5"
-                                    android:textAlignment="center"
-                                    android:textSize="22dp" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="mts"
-                                    android:textAlignment="center"
-                                    android:textSize="12dp" />
-                        </LinearLayout>
-                </RelativeLayout>
-
+                    android:layout_height="400dp" /> -->
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map_view"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp" />
 
         </RelativeLayout>
+
+
+
+
+
 </layout>

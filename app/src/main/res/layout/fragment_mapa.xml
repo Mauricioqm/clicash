@@ -10,5 +10,10 @@
         android:id="@+id/map_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text_mapa"
+        android:text="mapa"/>
 
 </FrameLayout>

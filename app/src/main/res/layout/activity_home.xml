@@ -9,11 +9,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".home">
+    android:layout_height="match_parent">
+    <!--tools:context=".home"-->
 
 
-    <fragment
+
+        <fragment
         android:id="@+id/hostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -56,14 +57,17 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/navView"
+        android:background="@color/vpi__background_holo_dark"
+        app:itemTextColor="#ffffff"
         app:menu="@menu/nav_drawer_menu"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

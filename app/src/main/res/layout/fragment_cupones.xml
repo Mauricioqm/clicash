@@ -6,7 +6,11 @@
 
         </data>
 
-        <RelativeLayout
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+                <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".fragments.CuponesFragment">
@@ -16,10 +20,267 @@
                     android:id="@+id/frag_cupones"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="cupones"
-                    android:layout_centerInParent="true" />
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/activa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/frag_cupones"
+                    android:background="#A9AAAD"
+                    android:text="ACTIVA TUS CUPONES"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
 
 
-        </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/cupon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/activa">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="260dp"
+                            android:layout_height="121dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Ver más >"
+                            android:background="@drawable/style_border"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="152dp"
+                            android:layout_height="100dp"
+                            android:layout_toRightOf="@id/activa">
+
+
+                                <TextView
+                                    android:id="@+id/precio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="$20"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/precio"
+                                    android:background="#FD9437"
+                                    android:text="ACTIVAR >"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cupon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/cupon1">
+
+                        <TextView
+                            android:id="@+id/vermas2"
+                            android:layout_width="260dp"
+                            android:layout_height="121dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Ver más >"
+                            android:background="@drawable/style_border"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="152dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/activa">
+
+
+                                <TextView
+                                    android:id="@+id/precio2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="15%"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/precio2"
+                                    android:background="#FD9437"
+                                    android:text="ACTIVAR >"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cupon3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/cupon2">
+
+                        <TextView
+                            android:id="@+id/vermas3"
+                            android:layout_width="260dp"
+                            android:layout_height="121dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Ver más >"
+                            android:background="@drawable/style_border"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="152dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/activa">
+
+
+                                <TextView
+                                    android:id="@+id/precio3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="20%"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/precio3"
+                                    android:background="#FD9437"
+                                    android:text="ACTIVAR >"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cupon4"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/cupon3">
+
+                        <TextView
+                            android:id="@+id/vermas4"
+                            android:layout_width="260dp"
+                            android:layout_height="121dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Ver más >"
+                            android:background="@drawable/style_border"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="152dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/activa">
+
+
+                                <TextView
+                                    android:id="@+id/precio4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="30%"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/precio4"
+                                    android:background="#FD9437"
+                                    android:text="ACTIVAR >"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cupon5"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/cupon4">
+
+                        <TextView
+                            android:id="@+id/vermas5"
+                            android:layout_width="260dp"
+                            android:layout_height="121dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Ver más >"
+                            android:background="@drawable/style_border"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="152dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/activa">
+
+
+                                <TextView
+                                    android:id="@+id/precio5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="10%"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/precio5"
+                                    android:background="#FD9437"
+                                    android:text="ACTIVAR >"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+        </ScrollView>
+
 </layout>

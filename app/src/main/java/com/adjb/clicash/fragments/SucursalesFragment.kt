@@ -1,53 +1,78 @@
 package com.adjb.clicash.fragments
 
-import android.content.Context
-import android.content.Intent
+
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.RelativeLayout
 import android.widget.TextView
-import android.widget.Toast
 
 import com.adjb.clicash.R
 import com.adjb.clicash.databinding.FragmentSucursalesBinding
-import com.adjb.clicash.home
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import kotlinx.android.synthetic.main.fragment_cupones.*
 import kotlinx.android.synthetic.main.fragment_sucursales.*
+import kotlinx.android.synthetic.main.fragment_sucursales.view.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class SucursalesFragment : Fragment() {
+class SucursalesFragment : Fragment(), OnMapReadyCallback {
 
-    private var ctx: Context? = null
-    private var self: View? = null
+    private lateinit var googleMap: GoogleMap //Traer librerias de mapa
 
     lateinit var binding: FragmentSucursalesBinding
+    private lateinit var mTextView: TextView
+    
+
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        map_view.onCreate(savedInstanceState)
+        map_view.onResume()
+
+        map_view.getMapAsync(this)
+    }
+
+    override fun onMapReady(map: GoogleMap?) {
+        map?.let {
+            googleMap = it
+        }
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        binding = FragmentSucursalesBinding.inflate(inflater)
+        // binding = FragmentSucursalesBinding.inflate(inflater)
+        val view: View = inflater.inflate(R.layout.fragment_sucursales, container, false)
 
-        ctx = container?.context
-        self = LayoutInflater.from(ctx).inflate(R.layout.fragment_sucursales, container, false)
-        val bDaButton = self?.findViewById<Button>(R.id.btnVermapa)
-        bDaButton?.setOnClickListener {
-            Toast.makeText(ctx, "button works!", Toast.LENGTH_SHORT).show()
-        }
-        return binding.root
-
-        /*btnVermapa.setOnClickListener() {
-            val ventanaMapa = Intent(activity, home::class.java)
-            startActivity(ventanaMapa)
+        /*view.btnMapa.setOnClickListener {view ->
+            //Toast.makeText(getActivity(),"Toast Hello",Toast.LENGTH_LONG).show();
+            //val intent = Intent(activity, mapaFragment::class.java)
+            //startActivity(intent)
+            //requireActivity().supportFragmentManager.beginTransaction()
+              //  .replace(R.id.frag_sucursales, mapaFragment.newInstance())
+                //.commit()
+        }*/
+        /*view.btnMapa?.setOnClickListener{
+            view -> Navigation.findNavController(view).navigate(R.id.text_mapa)
         }*/
 
+        return view
+
+        /*btnMapa.setOnClickListener() {
+            Toast.makeText(getActivity(),"Toast Hello",Toast.LENGTH_LONG).show();
+        }*/
 
     }
+
+
 
 }

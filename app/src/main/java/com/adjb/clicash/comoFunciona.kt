@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
+import androidx.appcompat.app.ActionBarDrawerToggle
 import kotlinx.android.synthetic.main.activity_como_funciona.*
+import kotlinx.android.synthetic.main.activity_home.*
 
 class comoFunciona : AppCompatActivity() {
 
@@ -15,6 +17,8 @@ class comoFunciona : AppCompatActivity() {
         R.mipmap.paso2,
         R.mipmap.paso3
     )
+    lateinit var toggle: ActionBarDrawerToggle
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,12 +28,20 @@ class comoFunciona : AppCompatActivity() {
         carousel_view.setImageListener{ position, imageView ->
             imageView.setImageResource(imgs[position])
         }
+
+        /*toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)*/
+
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    /*override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav_drawer_menu, menu)
         return true
-    }
+    }*/
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -58,5 +70,11 @@ class comoFunciona : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.nav_drawer_menu, menu)
+        return true
     }
 }

@@ -16,7 +16,11 @@
     <fragment
         android:id="@+id/sucursalesFragment"
         android:name="com.adjb.clicash.fragments.SucursalesFragment"
-        android:label="Sucursales" />
+        android:label="Sucursales" >
+        <action
+            android:id="@+id/action_sucursalesFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cashFragment"
         android:name="com.adjb.clicash.fragments.CashFragment"
